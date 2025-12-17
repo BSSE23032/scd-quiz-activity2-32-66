@@ -24,7 +24,7 @@ pipeline {
             steps {
                 sh 'kubectl apply -f kubernetes/deployment.yaml'
                 sh 'kubectl apply -f kubernetes/service.yaml'
-                sh 'kubectl rollout restart deployment flask-deployment'
+                sh 'kubectl rollout restart deployment mysite-deployment'
             }
         }
     }
